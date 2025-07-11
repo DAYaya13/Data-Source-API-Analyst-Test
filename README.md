@@ -1,27 +1,27 @@
 # Data-Source-API-Analyst-Test
-## Step 1: Prepare & Test a List of Reports
+# Data Source API Analyst - Homework Assignment
 
-### 1. Client Needs
-The goal was to extract the following types of data from the GitHub API:
-- Public repositories via keyword search
-- Commits from a given repository
-- File contents (like README.md) from a repository
+## 📌 Project Description
 
-### 2. GitHub API Research
+This repository was created as part of the technical homework for the **Data Source API Analyst** role at Improvado.
 
-#### Key Endpoints:
-- `/search/repositories?q=...`
-- `/repos/{owner}/{repo}/commits`
-- `/repos/{owner}/{repo}/contents/{path}`
+The goal of the assignment is to demonstrate the ability to work with REST APIs, specifically the GitHub API, by:
+- Understanding data extraction needs
+- Testing API endpoints (repositories, commits, file contents)
+- Handling authentication, pagination, and error responses
+- Documenting the process clearly
+- Delivering results via Postman or Google Colab
 
-#### API Concepts:
-- **Authentication:** via Bearer Token
-- **Headers:** `Authorization`, `X-GitHub-Api-Version`
-- **Pagination:** `?page=n&per_page=m`
-- **Rate Limits:**
-  - 5000 req/hr (authenticated)
-  - 60 req/hr (unauthenticated)
-- **Common Errors:**
-  - `401 Unauthorized` – Check token and headers
-  - `403 Rate Limit` – Add delay or monitor remaining quota
-  - `404 Not Found` – Check endpoint path or repo name
+---
+
+## 🗂️ Repository Structure
+
+```bash
+.
+├── README.md                        ← Overview of the task, structure and reflections
+├── Content/
+│   ├── api_documentation.md        ← API endpoints used, structure and key concepts
+│   ├── github_api_extraction.py    ← Python code for authentication and data extraction
+│   ├── troubleshooting.md          ← Notes and solutions to common API errors
+└── Postman_Collection/
+    └── github_api_colab.ipynb      ← Colab notebook with test results and code implementation
