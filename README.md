@@ -25,6 +25,7 @@ The goal of the assignment is to demonstrate the ability to work with REST APIs,
 │   ├── troubleshooting.md          ← Notes and solutions to common API errors
 └── Postman_Collection/
     └── github_api_colab.ipynb      ← Colab notebook with test results and code implementation
+
 🚀 Approach Summary
 ✅ Step 1: Understand Client Needs
 Analyzed the requirement to extract:
