@@ -25,3 +25,47 @@ The goal of the assignment is to demonstrate the ability to work with REST APIs,
 │   ├── troubleshooting.md          ← Notes and solutions to common API errors
 └── Postman_Collection/
     └── github_api_colab.ipynb      ← Colab notebook with test results and code implementation
+🚀 Approach Summary
+✅ Step 1: Understand Client Needs
+Analyzed the requirement to extract:
+
+Public repositories
+
+Commit history
+
+File contents (e.g., README.md)
+
+✅ Step 2: Research GitHub API
+Identified the following endpoints:
+
+/search/repositories
+
+/repos/{owner}/{repo}/commits
+
+/repos/{owner}/{repo}/contents/{path}
+
+Studied:
+
+Authentication with personal access tokens
+
+Pagination with ?page= and per_page=
+
+Rate limits and error codes
+
+✅ Step 3: Implement in Google Colab
+Used requests and json to connect to the API
+
+Managed pagination and token-based authentication
+
+Handled 401 (Unauthorized) and 403 (Rate Limit) errors
+
+🔍 Testing Results
+You can find the Colab implementation and outputs in the Postman_Collection/ folder. The code extracts public repo data and demonstrates how to handle multiple API layers.
+
+💡 Reflection
+This assignment was a great opportunity to demonstrate practical knowledge in working with APIs. It required understanding the API's behavior, ensuring robustness in the code, and maintaining good documentation — all critical in data integration roles.
+
+Thank you for the opportunity!
+
+🧵 Contact
+Prepared by: Yadira Dominguez
